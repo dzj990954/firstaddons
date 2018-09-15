@@ -1,7 +1,7 @@
 <odoo>
   <data>
     <!-- explicit list view definition -->
-    <!--
+    
     <record model="ir.ui.view" id="firstaddons.list">
       <field name="name">firstaddons list</field>
       <field name="model">firstaddons.firstaddons</field>
@@ -13,19 +13,19 @@
         </tree>
       </field>
     </record>
-    -->
+    
 
     <!-- actions opening views on models -->
-    <!--
+    
     <record model="ir.actions.act_window" id="firstaddons.action_window">
       <field name="name">firstaddons window</field>
       <field name="res_model">firstaddons.firstaddons</field>
       <field name="view_mode">tree,form</field>
     </record>
-    -->
+    
 
     <!-- server action to the one above -->
-    <!--
+    
     <record model="ir.actions.server" id="firstaddons.action_server">
       <field name="name">firstaddons server</field>
       <field name="model_id" ref="model_firstaddons_firstaddons"/>
@@ -38,23 +38,23 @@
         }
       </field>
     </record>
-    -->
+    
 
     <!-- Top menu item -->
-    <!--
+    
     <menuitem name="firstaddons" id="firstaddons.menu_root"/>
-    -->
+    
     <!-- menu categories -->
-    <!--
+    
     <menuitem name="Menu 1" id="firstaddons.menu_1" parent="firstaddons.menu_root"/>
     <menuitem name="Menu 2" id="firstaddons.menu_2" parent="firstaddons.menu_root"/>
-    -->
+   
     <!-- actions -->
-    <!--
+    
     <menuitem name="List" id="firstaddons.menu_1_list" parent="firstaddons.menu_1"
               action="firstaddons.action_window"/>
     <menuitem name="Server to list" id="firstaddons" parent="firstaddons.menu_2"
               action="firstaddons.action_server"/>
-    -->
+   
   </data>
 </odoo>
